@@ -355,14 +355,14 @@ const Chat = () => {
                                     <div className={styles.chatEmptyStateHeader}> 
                                         <BuildingMultipleFilled fontSize={"100px"} primaryFill={"rgba(27, 74, 239, 1)"} aria-hidden="true" aria-label="Chat with your Work Data logo" />
                                         </div>
-                                    <h1 className={styles.chatEmptyStateTitle}>Chat with your work data</h1>
+                                    <h1 className={styles.chatEmptyStateTitle}>Learn with your knowledge base</h1>
                                 </div>
                             : activeChatMode == ChatMode.WorkPlusWeb ?
                                 <div>
                                     <div className={styles.chatEmptyStateHeader}> 
                                         <BuildingMultipleFilled fontSize={"80px"} primaryFill={"rgba(27, 74, 239, 1)"} aria-hidden="true" aria-label="Chat with your Work and Web Data logo" /><AddFilled fontSize={"50px"} primaryFill={"rgba(0, 0, 0, 0.7)"} aria-hidden="true" aria-label=""/><GlobeFilled fontSize={"80px"} primaryFill={"rgba(24, 141, 69, 1)"} aria-hidden="true" aria-label="" />
                                     </div>
-                                    <h1 className={styles.chatEmptyStateTitle}>Chat with your work and web data</h1>
+                                    <h1 className={styles.chatEmptyStateTitle}>Learn with your knowledge base and web information</h1>
                                 </div>
                             : //else Ungrounded
                                 <div>
@@ -373,7 +373,7 @@ const Chat = () => {
                                 </div>
                             }
                             <span className={styles.chatEmptyObjectives}>
-                                <i>Information Assistant uses AI. Check for mistakes.   </i><a href="https://github.com/microsoft/PubSec-Info-Assistant/blob/main/docs/transparency.md" target="_blank" rel="noopener noreferrer">Transparency Note</a>
+                                <i>AlphaPi Orbis uses AI. Check for mistakes.   </i><a href="https://alphapi.com.au" target="_blank" rel="noopener noreferrer">About AlphaPi</a>
                             </span>
                             {activeChatMode != ChatMode.Ungrounded &&
                                 <div>
@@ -430,7 +430,7 @@ const Chat = () => {
                         {activeChatMode == ChatMode.WorkPlusWeb && (
                             <div className={styles.chatInputWarningMessage}> 
                                 {defaultApproach == Approaches.ReadRetrieveRead && 
-                                    <div>Questions will be answered by default from Work <BuildingMultipleFilled fontSize={"20px"} primaryFill={"rgba(27, 74, 239, 1)"} aria-hidden="true" aria-label="Work Data" /></div>}
+                                    <div>Questions will be answered by default from Knowledge Base <BuildingMultipleFilled fontSize={"20px"} primaryFill={"rgba(27, 74, 239, 1)"} aria-hidden="true" aria-label="Work Data" /></div>}
                                 {defaultApproach == Approaches.ChatWebRetrieveRead && 
                                     <div>Questions will be answered by default from Web <GlobeFilled fontSize={"20px"} primaryFill={"rgba(24, 141, 69, 1)"} aria-hidden="true" aria-label="Web Data" /></div>
                                 }
@@ -438,7 +438,7 @@ const Chat = () => {
                         )}
                         <QuestionInput
                             clearOnSend
-                            placeholder="Type a new question (e.g. Who are Microsoft's top executives, provided as a table?)"
+                            placeholder="Type a new question (e.g. What is Modern Slavery?)"
                             disabled={isLoading}
                             onSend={question => makeApiRequest(question, defaultApproach, {}, {}, {})}
                             onAdjustClick={() => setIsConfigPanelOpen(!isConfigPanelOpen)}

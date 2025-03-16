@@ -11,9 +11,9 @@ export type ExampleModel = {
 };
 
 const EXAMPLES: ExampleModel[] = [
-    { text: "Are there any radio telescopes in Australia?", value: "Are there any radio telescopes in Australia?" },
-    { text: "What are Microsoft's primary sources of revenue?", value: "What are Microsoft's primary sources of revenue?" },
-    { text: "What are some flavors of Breyers?", value: "What are some flavors of Breyers?" }
+    { text: "What are different types of modern slavery?", value: "What are different types of modern slavery?" },
+    { text: "How to identify modern slavery?", value: "How to identify modern slavery?" },
+    { text: "Modern slavery vs human trafficking?", value: "Modern slavery vs human trafficking?" }
 ];
 
 interface Props {
